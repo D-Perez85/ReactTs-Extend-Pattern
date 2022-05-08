@@ -1,5 +1,6 @@
- import ProductCard from '../components/ProductCard';
+import ProductCard from '../components/ProductCard';
 import { ProductImg } from "../components/ProductImage";
+import { ProductButtons } from '../components/ProductButtons';
 import "../styles/custom-styles.css";
 
 const product = {
@@ -20,6 +21,7 @@ const ShoppingPage = () => {
               boxShadow: "10px 10px 10px rgba(0,0,0,0.2)",
             }}
           />
+          <ProductButtons/>
         </ProductCard>
     </div>
     </div>
