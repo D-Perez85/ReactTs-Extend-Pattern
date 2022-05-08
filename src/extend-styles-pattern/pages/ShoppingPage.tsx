@@ -21,6 +21,14 @@ const ShoppingPage = () => {
           <ProductTitle />
           <ProductButtons />
         </ProductCard>
+
+        {/* OPCION B - Component Based of internal structure */}
+        <ProductCard product={product} className="bg-dark text-white">
+          <ProductCard.Imagen 
+            className="custom-image" />
+          <ProductCard.Title className="text-bold" />
+          <ProductCard.Buttons className="custom-buttons" />
+        </ProductCard>
       </div>
     </div>
   );
