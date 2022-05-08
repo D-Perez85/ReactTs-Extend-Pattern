@@ -1,10 +1,8 @@
-import React from 'react';
+import Navigation from './routes/Navigation';
+
 function App() {
   return (
-    <div>
-      <h3>Extend-Styles-pattern</h3>
-    </div>
-  );
+    <Navigation/>
+    );
 }
-
 export default App;
