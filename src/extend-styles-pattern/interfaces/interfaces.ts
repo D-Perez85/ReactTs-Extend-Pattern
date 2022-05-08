@@ -5,7 +5,9 @@
   }
   
    export interface ProductContextProps {
-    product: Product
+    product: Product, 
+    counter: number, 
+    increaseBy: (value: number)=> void, 
   }
 
  
