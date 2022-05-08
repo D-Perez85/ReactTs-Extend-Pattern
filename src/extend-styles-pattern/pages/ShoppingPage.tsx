@@ -1,11 +1,12 @@
 import ProductCard from '../components/ProductCard';
 import { ProductImg } from "../components/ProductImage";
 import { ProductButtons } from '../components/ProductButtons';
+import { ProductTitle } from '../components/ProductTitle';
 import "../styles/custom-styles.css";
 
 const product = {
   id: "1",
-  title: "Hola Mundo",
+  title: "Delicious Cafe",
   img: "./coffee-mug.png",
 };
 const ShoppingPage = () => {
@@ -21,6 +22,7 @@ const ShoppingPage = () => {
               boxShadow: "10px 10px 10px rgba(0,0,0,0.2)",
             }}
           />
+          <ProductTitle/>
           <ProductButtons/>
         </ProductCard>
     </div>
