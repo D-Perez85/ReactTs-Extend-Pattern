@@ -1,7 +1,5 @@
-import ProductCard from '../components/ProductCard';
-import { ProductImg } from "../components/ProductImage";
-import { ProductButtons } from '../components/ProductButtons';
-import { ProductTitle } from '../components/ProductTitle';
+import { ProductButtons, ProductImg, ProductTitle } from "../components";
+import { ProductCard } from "../components"; 
 import "../styles/custom-styles.css";
 
 const product = {
@@ -10,23 +8,21 @@ const product = {
   img: "./coffee-mug.png",
 };
 const ShoppingPage = () => {
-  return(
+  return (
     <div>
-    <h1> Shopping Store </h1>
-    <hr />
-    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+      <h1> Shopping Store </h1>
+      <hr />
+      <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+        {/* A:  Component Based Components */}
         <ProductCard product={product} className="bg-dark text-white">
           <ProductImg
             className="custom-image"
-            style={{
-              boxShadow: "10px 10px 10px rgba(0,0,0,0.2)",
-            }}
-          />
-          <ProductTitle/>
-          <ProductButtons/>
+            style={{ boxShadow: "10px 10px 10px rgba(0,0,0,0.2)"}}/>
+          <ProductTitle />
+          <ProductButtons />
         </ProductCard>
+      </div>
     </div>
-    </div>
-  )
+  );
 };
 export default ShoppingPage;
